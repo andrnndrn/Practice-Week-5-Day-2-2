@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { LanguageContext } from "../App";
+import PropTypes from "prop-types";
 
 function TodoForm(props) {
   const { handleChange, handleSubmit, newTodo } = props;
@@ -20,5 +21,11 @@ function TodoForm(props) {
     </form>
   );
 }
+
+TodoForm.prototypes = {
+  handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  newTodo: PropTypes.string.isRequired,
+};
 
 export default TodoForm;
