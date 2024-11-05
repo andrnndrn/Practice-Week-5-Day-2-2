@@ -58,7 +58,7 @@ function App() {
     >
       <Navbar />
       <div className="container mt-5">
-        <h1 className="text-center mb-4">Todo List</h1>
+        <h1 className="text-center mb-4">{language === "en" ? "TODO LISTS" : "HAL YANG HARUS DILAKUKAN"}</h1>
         <TodoForm
           handleChange={handleChange}
           handleSubmit={handleSubmit}
